@@ -1,0 +1,276 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Header */
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.6em;
+    color: #4a90e2;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+}
+
+.textarea1 {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Ensures all corners have rounded edges */
+    font-size: 1.1em;
+    resize: vertical;
+    min-height: 120px;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+    transition: border-color 0.3s, box-shadow 0.3s ease-in-out;
+    background-color: #fdfdfd; /* Slight background color for better visibility */
+    outline: none;
+}
+
+.textarea1:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.6);
+}
+
+button {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s;
+    width: max-content;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #357ab7;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Result Section */
+.result {
+    padding: 20px;
+    background: #e9f7ef;
+    border: 1px solid #b2d8c8;
+    border-radius: 12px;
+    width: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.result h2 {
+    color: #2e7d32;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: red;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #888;
+    text-align: center;
+}
+
+/* Section Styles */
+#team-info, #project-info {
+    margin-top: 30px;
+    padding: 25px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+.hidden {
+    display: none !important;
+}
+
+/* Team Section Styling */
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds space between each list item */
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.team-list li a {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Space between name and LinkedIn icon */
+    font-size: 1.1em;
+text-decoration: none;
+color: black;
+}
+
+.linkedin-icon {
+    width: 24px; /* Set icon size */
+    height: 24px;
+    transition: transform 0.2s ease;
+}
+
+.linkedin-icon:hover {
+    transform: scale(1.2); /* Slight zoom-in effect on hover */
+}
+.cleaned_text {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Ensures all corners have rounded edges */
+    font-size: 1.1em;
+    resize: vertical;
+    min-height: 120px;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+    transition: border-color 0.3s, box-shadow 0.3s ease-in-out;
+    background-color: #fdfdfd; /* Slight background color for better visibility */
+    outline: none;
+}
+
+
+.team-info h2, .project-info h2 {
+    color: #4a90e2;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.team-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.team-info li {
+    margin-bottom: 12px;
+    font-size: 1.1em;
+}
+
+.team-info a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.team-info a:hover {
+    text-decoration: underline;
+}
+
+.project-info p {
+    margin-bottom: 12px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    textarea {
+        font-size: 1em;
+    }
+
+    .team-info, .project-info {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    textarea, button {
+        width: 100%;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+}
