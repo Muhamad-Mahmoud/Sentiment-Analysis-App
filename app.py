@@ -126,11 +126,6 @@ def home() -> str:
     """Renders the home page."""
     return render_template('index.html')
 
-@app.route('/team')
-def team() -> str:
-    """Renders the team page."""
-    return render_template('team.html')
-
 @app.route('/about')
 def about() -> str:
     """Renders the about page."""

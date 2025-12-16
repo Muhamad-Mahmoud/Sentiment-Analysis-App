@@ -19,7 +19,6 @@
             </div>
             <div class="nav-links">
                 <a href="/" class="nav-link"><i class="fas fa-home"></i> Home</a>
-                <a href="/team" class="nav-link"><i class="fas fa-users"></i> Team</a>
                 <a href="/about" class="nav-link active"><i class="fas fa-info-circle"></i> About</a>
             </div>
         </div>
@@ -45,8 +44,36 @@
                     an impressive 89% accuracy on the IMDB movie reviews dataset.</p>
             </div>
 
+            <!-- How It Works Section (New) -->
+            <div class="features-section" style="margin-top: 2rem;">
+                <h2><i class="fas fa-cogs"></i> How It Works</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-file-alt"></i>
+                        <h4>1. Input Processing</h4>
+                        <p>Text is cleaned, lowercased, and contractions are expanded (e.g., "don't" → "do not").</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-font"></i>
+                        <h4>2. Tokenization</h4>
+                        <p>Words are converted into numerical sequences using a vocabulary of 20,000 top words.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-network-wired"></i>
+                        <h4>3. GRU Analysis</h4>
+                        <p>The neural network processes the sequence to understand context and long-term dependencies.
+                        </p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>4. Prediction</h4>
+                        <p>The model outputs a probability score, classifying sentiment as Positive or Negative.</p>
+                    </div>
+                </div>
+            </div>
+
             <!-- Project Details Grid -->
-            <div class="details-grid">
+            <div class="details-grid" style="margin-top: 3rem;">
                 <div class="detail-card">
                     <div class="detail-icon">
                         <i class="fas fa-tag"></i>
@@ -212,7 +239,6 @@
                 <h4>Quick Links</h4>
                 <ul class="footer-links">
                     <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="/team"><i class="fas fa-users"></i> Team</a></li>
                     <li><a href="/about"><i class="fas fa-info"></i> About</a></li>
                 </ul>
             </div>
